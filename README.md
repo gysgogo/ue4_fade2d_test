@@ -26,8 +26,10 @@ https://github.com/gysgogo/ue4_fade2d_test
 https://github.com/gysgogo/ue4_fade2d_test 
 https://github.com/gysgogo/ue4_fade2d_test 
 
+
 Exception thrown at 0x00007FFED060DE03 (UE4Editor-Core.dll) in UE4Editor.exe: 0xC0000005: Access violation writing location 0x0000000000000010.
- 	[Inline Frame] UE4Editor-Core.dll!__TBB_machine_cmpswp1(volatile void *) Line 65	C++
+ 	
+	[Inline Frame] UE4Editor-Core.dll!__TBB_machine_cmpswp1(volatile void *) Line 65	C++
  	[Inline Frame] UE4Editor-Core.dll!__TBB_TryLockByte(unsigned char &) Line 914	C++
  	[Inline Frame] UE4Editor-Core.dll!__TBB_LockByte(unsigned char &) Line 921	C++
  	[Inline Frame] UE4Editor-Core.dll!MallocMutex::scoped_lock::{ctor}(MallocMutex &) Line 39	C++
@@ -38,5 +40,4 @@ Exception thrown at 0x00007FFED060DE03 (UE4Editor-Core.dll) in UE4Editor.exe: 0x
  	[Inline Frame] UE4Editor-Core.dll!rml::internal::internalFree(void *) Line 2644	C++
  	UE4Editor-Core.dll!scalable_free(void * object) Line 2933	C++
 >	UE4Editor-Core.dll!FMemory::Free(void * Original) Line 80	C++
-
 
