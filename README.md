@@ -1,19 +1,18 @@
 In Ue4 I can't use fade_2d.getTrianglePointers.
 
 
-Fade_2D dt;
-Point2 p0(0.0, 0.0);
-Point2 p1(1.0, 0.0);
-Point2 p2(0.5, 2.0);
-Point2 p3(0.5, 0.5);
+	Point2 p0(0.0, 0.0);
+	Point2 p1(1.0, 0.0);
+	Point2 p2(0.5, 2.0);
+	Point2 p3(0.5, 0.5);
 
-// Insert the points
-dt.insert(p0);
-dt.insert(p1);
-dt.insert(p2);
-dt.insert(p3);
-std::vector<Triangle2*> vTriangles;
-dt.getTrianglePointers(vTriangles);
+	// Insert the points
+	dt.insert(p0);
+	dt.insert(p1);
+	dt.insert(p2);
+	dt.insert(p3);
+	std::vector<Triangle2*> vTriangles;
+	dt.getTrianglePointers(vTriangles);
 
 I use above code in ue4 beginplay method,when I clicked play button dt.getTrianglePointers(vTriangles) crash my app some times (not every time) .the beginplay method raised error when closed method.error is about free memory.
 I have post minimal ue4 project on github that only have one actor Source\ue4_fade2d_test\TestActor.cpp and beginplay is above simple code.
